@@ -21,17 +21,8 @@ function ColegioForm() {
       //console.log(res2.data)
     }
     obtenerZona();
-  }, []);
+  }, [setZonas]);
 
-  // const guardarColegio = async (data) => {
-  //   await postColegio(data);
-  //   handleClose();
-  // };
-
-  // const onSubmit = (data) => {
-  //   guardarColegio(data);
-  //   reset();
-  // };
   const OnSubmit = handleSubmit(data => {
     postColegio(data)
     handleClose()
